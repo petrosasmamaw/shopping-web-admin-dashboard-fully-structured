@@ -18,7 +18,7 @@ const AdminComments = () => {
       <h2>Admin Comments</h2>
       {comments.length === 0 ? <p>No comments</p> : comments.map((c) => (
         <div key={c.id} className="comment">
-          <div><strong>{c.user_email || "Anonymous"}</strong> — <small>{new Date(c.created_at).toLocaleString()}</small></div>
+          <div><strong>{c.user_email || `User ${c.id}`}</strong> — <small>{new Date(c.created_at).toLocaleString()}</small></div>
           <p className="comment-text">{c.content}</p>
           <button className="ghost" onClick={() => del(c.id)}>Delete</button>
         </div>

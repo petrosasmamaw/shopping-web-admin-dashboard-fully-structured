@@ -10,7 +10,7 @@ const NavBar = ({ user, setUser }) => {
 
   return (
     <header className="navbar card">
-      <h1>Shopping App Admin</h1>
+      <h1>Gebeya Admin Dashboard</h1>
       <div className="nav-actions">
         {user ? (
           <>
